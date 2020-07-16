@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  background: linear-gradient(135deg, rgba(132,154,184,1) 0%, rgba(241,247,255,1) 100%);
+}
+
+.btn {
+  width: 5em;
+  height: 3em;
+  border-radius: .5em;
+  outline: none;
+}
+
+.btn * {
+  text-decoration: none;
+}
