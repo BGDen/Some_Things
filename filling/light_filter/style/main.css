@@ -2,9 +2,87 @@
   box-sizing: border-box;
 }
 
+body, .container, nav ul, .block-cover{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 body{
+  margin: 0;
+  padding: 0;
   background: #000;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
 }
 
+.container{
+  max-width: 1200px;
+  flex-direction: column;
+}
+
+nav{
+  width: 100%;
+}
+
+nav ul{
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li{
+  cursor: pointer;
+}
+
+.block-cover{
+  flex-wrap: wrap;
+}
+
+.box{
+  min-width: calc(22% - 28px);
+  min-height: 140px;
+  padding: 0 10px;
+  margin: 15px;
+  border-width: 3px;
+  border-radius: .2em;
+  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+}
+
+.box.ScarletSails{
+  border: 3px solid #e74c3c;
+}
+
+.box.BrightViolet{
+  border: 3px solid #8e44ad;
+}
+
+.box.GreenTea{
+  border: 3px solid #2ecc71;
+}
+
+.box.ShiningAzure{
+  border: 3px solid #2980b9;
+}
+
+.box.JuicyYellow{
+  border: 3px solid #f1c40f;
+}
+
+.text-ScarletSails{
+  color: #e74c3c;
+}
+
+.text-BrightViolet{
+  color: #8e44ad;
+}
+
+.text-GreenTea{
+  color: #2ecc71;
+}
+
+.text-JuicyYellow{
+  color: #f1c40f;
+}
